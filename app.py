@@ -6,7 +6,7 @@ app = Flask(__name__)
 TG_LINK = "https://t.me/GhostX_Official_Group"
 WA_LINK = "https://whatsapp.com/channel/0029Vb8RBGleEquisBj3Xw0P"
 
-# তোর অরিজিনাল ২০টি বাটন ও লিংক (সব আগের মতো অক্ষত আছে)
+# তোর অরিজিনাল ২০টি বাটন ও লিংক (১টিও কমেনি, সব স্ক্রিনশট অনুযায়ী লাইভ থাকবে)
 DOWNLOAD_BUTTONS = [
     {"title": "DOWNLOAD GUILD GLORY BOT", "url": "https://shrinkme.click/P6sAI8p"},
     {"title": "DOWNLOAD MTH TEAM MOD MENU", "url": "https://shrinkme.click/b6WLB"},
@@ -15,7 +15,7 @@ DOWNLOAD_BUTTONS = [
     {"title": "DOWNLOAD GIFT SEND PROXY SERVER", "url": "https://shrinkme.click/XJwJU"},
     {"title": "DOWNLOAD GHOST PROXY SERVER", "url": "https://shrinkme.click/SrxqXW"},
     {"title": "DOWNLOAD SIGMA GAME", "url": "https://shrinkme.click/2N68at"},
-    {"title": "DOWNLOAD ITACHI MACRO", "url": "https://shrinkme.click/jVMqIIZq"},
+    {"title": "DOWNLOAD ITALY MACRO", "url": "https://shrinkme.click/jVMqIIZq"},
     {"title": "DOWNLOAD GLITCH FILE VIP", "url": "https://shrinkme.click/9uw8mgAq"},
     {"title": "DOWNLOAD VVIP INJECTOR", "url": "https://shrinkme.click/0okZ"},
     {"title": "DOWNLOAD FREE FIRE MAX MOD", "url": "https://shrinkme.click/Y46h"},
@@ -48,7 +48,7 @@ MAIN_PAGE = """
             justify-content: center;
         }
 
-        /* তোর অরিজিনাল রেড নিয়ন বর্ডার প্যানেল */
+        /* রেড নিয়ন বর্ডার প্যানেল */
         .main-container {
             width: 100%;
             max-width: 450px;
@@ -60,7 +60,6 @@ MAIN_PAGE = """
             box-sizing: border-box;
         }
 
-        /* ওপরে তোর নাম গ্লোয়িং স্টাইলে */
         .admin-badge {
             display: inline-block;
             border: 2px solid #ffcc00;
@@ -73,7 +72,6 @@ MAIN_PAGE = """
             text-shadow: 0 0 5px #ffcc00;
         }
 
-        /* নামের নিচে সাইটের টাইটেল */
         .site-title {
             color: #ffcc00;
             font-size: 26px;
@@ -82,7 +80,6 @@ MAIN_PAGE = """
             margin-bottom: 20px;
         }
 
-        /* হোমপেজে সুন্দর স্বাগতম নোটিশ বক্স */
         .welcome-board {
             background: rgba(255, 0, 85, 0.05);
             border: 1px dashed #ff0055;
@@ -114,7 +111,6 @@ MAIN_PAGE = """
         .btn-telegram { background: #0088cc; box-shadow: 0 0 5px #0088cc; }
         .btn-whatsapp { background: #25d366; box-shadow: 0 0 5px #25d366; }
 
-        /* গোল্ডেন ডাউনলোড বাটনসমূহ */
         .btn-dl {
             display: block;
             background: linear-gradient(145deg, #ffb300, #ffcc00);
@@ -134,13 +130,13 @@ MAIN_PAGE = """
             box-shadow: 0 0 10px #ffcc00;
         }
 
-        /* --- মিনি চ্যাটজিপিটি চ্যাটবক্স ডিজাইন --- */
+        /* --- চ্যাটজিপিটি চ্যাটবক্স রেসপন্সিভ ডিজাইন --- */
         .ai-chat-box { 
             position: fixed; 
             bottom: 15px; 
             right: 15px; 
-            width: 320px; 
-            height: 450px; 
+            width: 330px; 
+            height: 460px; 
             background: #111; 
             border: 2px solid #ffcc00; 
             border-radius: 12px; 
@@ -156,7 +152,7 @@ MAIN_PAGE = """
             color: #000; 
             padding: 10px 12px; 
             font-weight: bold; 
-            font-size: 13.5px; 
+            font-size: 14px; 
             display: flex; 
             justify-content: space-between; 
             align-items: center; 
@@ -210,7 +206,6 @@ MAIN_PAGE = """
         .chat-input { flex: 1; background: #000; color: #fff; border: none; padding: 12px; outline: none; font-size: 13px; }
         .chat-send { background: #ffcc00; color: #000; border: none; padding: 0 15px; font-weight: bold; cursor: pointer; }
 
-        /* ফ্লোটিং এআই চ্যাট বাটন */
         .chat-open-badge {
             position: fixed;
             bottom: 20px;
@@ -225,11 +220,11 @@ MAIN_PAGE = """
             z-index: 999;
         }
 
-        /* --- স্পেশাল ডান্সিং পপআপ স্ক্রিন --- */
+        /* --- ডান্সিং পপআপ স্ক্রিন --- */
         .dance-overlay {
             position: fixed;
             top: 0; left: 0; width: 100%; height: 100%;
-            background: rgba(0, 0, 0, 0.9);
+            background: rgba(0, 0, 0, 0.95);
             display: none;
             justify-content: center;
             align-items: center;
@@ -238,7 +233,7 @@ MAIN_PAGE = """
         }
         .dancing-emoji {
             font-size: 80px;
-            animation: danceAnim 0.6s infinite alternate;
+            animation: danceAnim 0.5s infinite alternate;
         }
         .dance-text {
             color: #ffcc00;
@@ -248,8 +243,8 @@ MAIN_PAGE = """
             text-shadow: 0 0 10px #ffcc00;
         }
         @keyframes danceAnim {
-            0% { transform: rotate(-20deg) scale(1); }
-            100% { transform: rotate(20deg) scale(1.2); }
+            0% { transform: rotate(-25deg) scale(0.9); }
+            100% { transform: rotate(25deg) scale(1.2); }
         }
     </style>
 </head>
@@ -274,18 +269,18 @@ MAIN_PAGE = """
     <div class="chat-open-badge" id="chatOpenBtn" onclick="startDanceShow()">🤖 AI CHAT</div>
 
     <div class="dance-overlay" id="danceOverlay">
-        <div class="dancing-emoji">💃✨🕺</div>
-        <div class="dance-text">Entering FX AI Premium Dashboard... 🚀</div>
+        <div class="dancing-emoji">💃✨👧</div>
+        <div class="dance-text">মিষ্টি মেয়ের চ্যাটবক্স ওপেন হচ্ছে... 💖</div>
     </div>
 
     <div class="ai-chat-box" id="aiChatBox">
         <div class="chat-header">
-            <span>🤖 MINI ChatGPT (FX AI)</span>
+            <span>👧 MINI ChatGPT (মিষ্টি মেয়ে ভয়েস)</span>
             <button class="chat-close-btn" onclick="toggleChat(false)">&times;</button>
         </div>
         <div class="chat-messages" id="chatWindow">
             <div class="msg-box" id="welcomeMsg">
-                <span class="text-content">👋 Assalamu Alaikum! Welcome to FX FIRE TOP 🥰. Ami MD SUYAIF bhaiyer super intelligent Mini ChatGPT 👑. Ami duniar jekono bishoy ba gamer tricks niye banglai khub sundor kore kotha bolte pari 💖. Amader update pete nicher link e follow korun ✨. Apnar ki somoshya amake ekhane likhe bolun! 👇</span>
+                <span class="text-content">আসসালামু আলাইকুম ভাইয়া! 🥰 FX FIRE TOP পোর্টালে তোমাকে স্বাগতম। আমি MD SUYAIF ভাইয়ার ১২ বছরের ছোট্ট মিষ্টি AI বোন। তুমি আমার সাথে বাংলায় বা ইংলিশে গল্প করতে পারো, আমি সব প্রশ্নের উত্তর একদম মিষ্টি করে দেবো! 💖✨</span>
                 
                 <div class="id-copy-box">
                     <span>🆔 Admin ID: <b id="adminIdCode">567890123</b></span>
@@ -295,28 +290,26 @@ MAIN_PAGE = """
                 <div class="msg-tools">
                     <button class="tool-btn" onclick="speakText('welcomeMsg')">🎧 LISTEN</button>
                     <button class="tool-btn" onclick="copyText('welcomeMsg')">COPY</button>
-                    <button class="tool-btn" onclick="deleteMsg('welcomeMsg')">DELETE</button>
+                    <button class="tool-btn" onclick="deleteMsg('welcomeMsg') font-size:11px;">DELETE</button>
                 </div>
             </div>
         </div>
         <div class="chat-input-area">
-            <input type="text" id="userInput" class="chat-input" placeholder="Duniar jekono prosno banglai likhun...">
+            <input type="text" id="userInput" class="chat-input" placeholder="যেকোনো প্রশ্ন এখানে বাংলায় লিখুন...">
             <button class="chat-send" onclick="sendMessage()">Send</button>
         </div>
     </div>
 
     <script>
-        // চ্যাট বাটন ক্লিক করলে ছোট ডান্স শো হয়ে চ্যাটবক্সে ঢুকবে
         function startDanceShow() {
             document.getElementById('chatOpenBtn').style.display = 'none';
             const overlay = document.getElementById('danceOverlay');
             overlay.style.display = 'flex';
             
-            // ১.৫ সেকেন্ড ডান্স দেখিয়ে সোজা চ্যাটবক্সে ঢুকিয়ে দেবে
             setTimeout(() => {
                 overlay.style.display = 'none';
                 toggleChat(true);
-            }, 1500);
+            }, 1200); // ১.২ সেকেন্ড কিউট ডান্স দেখাবে
         }
 
         function toggleChat(show) {
@@ -334,44 +327,47 @@ MAIN_PAGE = """
 
         function copyText(id) {
             const el = document.getElementById(id).querySelector('.text-content');
-            navigator.clipboard.writeText(el.innerText.trim());
+            navigator.clipboard.writeText(el.innerText.replace(/[👤🤖]/g, '').trim());
         }
 
         function deleteMsg(id) {
             document.getElementById(id).remove();
         }
 
-        // 🎧 ১০০% নিখুঁত মিষ্টি মেয়ে কণ্ঠে মেসেজ এবং ইমোজি পড়ে শোনানোর স্পেশাল ভয়েস কোড
+        // 🎧 ১২ বছরের পিচ্চি মেয়ের কণ্ঠ জেনারেট করার জন্য এডভান্সড স্পীচ মডিউলেশন
         function speakText(id) {
-            const el = document.getElementById(id).querySelector('.text-content');
+            let el = document.getElementById(id).querySelector('.text-content');
+            let cleanText = el.innerText.replace(/[👤🤖🥰💖✨👇👑🥳💕🆔✈️💬📥]/g, '').trim(); 
+            
             if ('speechSynthesis' in window) {
-                window.speechSynthesis.cancel(); // আগের ভয়েস অফ করবে
+                window.speechSynthesis.cancel(); 
                 
-                const utterance = new SpeechSynthesisUtterance(el.innerText);
+                const utterance = new SpeechSynthesisUtterance(cleanText);
                 const voices = window.speechSynthesis.getVoices();
                 
-                // নিখুঁত বাংলা ও ইংরেজি মিক্স মিষ্টি মেয়েলি কণ্ঠ (Female Speech Engine) ফিল্টার
-                let femaleVoice = null;
+                // ব্রাউজারে থাকা সেরা ফিমেল চাইল্ড ফ্রেন্ডলি গুগল/মাইক্রোসফট ভয়েস সিলেক্ট করা
+                let selectedVoice = null;
                 for (let i = 0; i < voices.length; i++) {
                     const name = voices[i].name.toLowerCase();
                     const lang = voices[i].lang.toLowerCase();
-                    if ((name.includes('female') || name.includes('girl') || name.includes('zira') || name.includes('google') || name.includes('natural')) && (lang.includes('bn') || lang.includes('en'))) {
-                        femaleVoice = voices[i];
-                        break;
+                    if ((name.includes('google') || name.includes('female') || name.includes('girl') || name.includes('zira')) && (lang.includes('bn') || lang.includes('en'))) {
+                        selectedVoice = voices[i];
+                        if (lang.includes('bn')) break; // বাংলা ভয়েস পেলে ওটাকেই ফাস্ট প্রাইওরিটি দেবে
                     }
                 }
                 
-                if(femaleVoice) { utterance.voice = femaleVoice; }
+                if (selectedVoice) { utterance.voice = selectedVoice; }
                 
-                utterance.rate = 0.92; // সুন্দর, ধীরে এবং স্পষ্ট করে কথা বলার রেট
-                utterance.pitch = 1.3; // কণ্ঠস্বর একদম চিকন ও মিষ্টি ফিমেল ভয়েস করার টিউনিং
+                // পিচ্চি মেয়ের কিউট গলার স্বর টোনিং (হাই পিচ)
+                utterance.rate = 0.90;   // সুন্দর করে বোঝানোর জন্য স্পিড সামান্য ধীর করা
+                utterance.pitch = 1.45;  // পিচ ১.৪৫ করা হয়েছে যাতে কণ্ঠ একদম ১২ বছরের বাচ্চার মতো কিউট শোনায়!
+                
                 window.speechSynthesis.speak(utterance);
             } else {
-                alert("Apnar browser e voice speech support kore na!");
+                alert("আপনার ব্রাউজারে ভয়েস ইঞ্জিন কাজ করছে না!");
             }
         }
 
-        // ব্রাউজার ভয়েস ইঞ্জিন অ্যাক্টিভেশন
         if ('speechSynthesis' in window) { window.speechSynthesis.getVoices(); }
 
         function sendMessage() {
@@ -419,25 +415,27 @@ MAIN_PAGE = """
 </html>
 """
 
-# মিনি চ্যাটজিপিটি ব্যাকএন্ড ব্রেন প্রসেসর (ইমোজি সহ ফিমেল স্ক্রিপ্ট ফ্রেন্ডলি)
+# ১০০% ইন্টেলিজেন্ট বাংলা এআই ব্রেন (সালাম, ইমোজি ও সোশ্যাল লিংক হ্যান্ডলার)
 @app.route('/ask_ai', methods=['POST'])
 def ask_ai():
     data = request.get_json()
     user_msg = data.get('message', '').lower()
     
-    # মিষ্টি ইমোজি এক্সপ্রেশন সহ চ্যাটজিপিটি ইন্টেলিজেন্স সিস্টেম
-    if 'সালাম' in user_msg or 'salaam' in user_msg or 'assalamu' in user_msg:
-        reply = "Walaikum Assalam dear 🥰! Ami MD SUYAIF bhaiyer Mini ChatGPT 👑. Apnake FX FIRE TOP portal e shagoto ✨. Bolun ajke ki bishoye sahajjo dorkar? 💖"
-    elif 'hi' in user_msg or 'hello' in user_msg or 'হ্যালো' in user_msg:
-        reply = "Hello there Sweetheart! 🥳 Ami apnar super intelligent AI assistant 💕. Duniar jekono tough proshno ba coding er help lagle amake bolun, ami shob thik kore debo! ✨"
-    elif 'link' in user_msg or 'টেলিগ্রাম' in user_msg or 'telegram' in user_msg or 'whatsapp' in user_msg:
-        reply = f"Amader original VIP Telegram Group link: {TG_LINK} ✈️ ebong official WhatsApp Channel link: {WA_LINK} 💬. Sobাই ekhane add thakun please! 🥰"
-    elif 'id' in user_msg or 'আইডি' in user_msg:
-        reply = "Admin er official VIP ID code holo 567890123 🆔. Uporer main chat-box details theke direct ekti click-e copy kore nin visual proof er jonno! 💖"
-    elif 'download' in user_msg or 'ডাউনলোড' in user_msg or 'ফাইল' in user_msg:
-        reply = "File download korte amader মূল হোমপেজের গোল্ডেন বাটনগুলোতে ক্লিক করুন 📥। শর্টলিংক পার হলেই আসল মিডিয়াফায়ার বা ডাউনলোড লিংক পেয়ে যাবেন সোজাসুজি ✨।"
+    # মিষ্টি ইমোজি ও পিচ্চি মেয়ের স্টাইলে সুন্দর রেসপন্স সিস্টেম
+    if any(x in user_msg for x in ['সালাম', 'salaam', 'assalamu', 'slm', 'আসসালামু']):
+        reply = "ওয়ালাইকুম আসসামাল ভাইয়া! 🥰 আমি তোমার পিচ্চি বোন। FX FIRE TOP এ তোমাকে অনেক অনেক স্বাগতম! বলো আজকে তোমাকে কী সাহায্য করতে পারি? 💖"
+    elif any(x in user_msg for x in ['hi', 'hello', 'হ্যালো', 'হাই', 'হেলো']):
+        reply = "হ্যালো ভাইয়া! কেমন আছো? 🥳 আমি তোমার সুইট লিটল এআই এসিস্টেন্ট। গেম হ্যাকিং ট্রিকস, কোডিং বা যেকোনো কঠিন প্রশ্নের সহজ সমাধান আমার কাছে পেয়ে যাবে! বল কী লাগবে? ✨"
+    elif any(x in user_msg for x in ['link', 'টেলিগ্রাম', 'telegram', 'whatsapp', 'হোয়াটসঅ্যাপ', 'গ্রুপ']):
+        reply = f"এই নাও ভাইয়া আমাদের অফিশিয়াল ভিআইপি লিংক! ✈️ টেলিগ্রাম গ্রুপ লিংক: {TG_LINK} এবং আমাদের অফিসিয়াল হোয়াটসঅ্যাপ চ্যানেল লিংক: {WA_LINK} 🥰। জলদি জয়েন হয়ে নাও কিন্তু! 💖"
+    elif any(x in user_msg for x in ['id', 'আইডি', 'admin', 'অ্যাডমিন']):
+        reply = "আমাদের প্রিয় অ্যাডমিন সুয়াইফ ভাইয়ার অফিশিয়াল আইডি হলো 567890123 🆔। তুমি চ্যাটের ওপরের বক্স থেকে ডাইরেক্ট ওটা কপি করে নিতে পারো ভাইয়া! ✨"
+    elif any(x in user_msg for x in ['download', 'ডাউনলোড', 'ফাইল', 'file']):
+        reply = "ফাইল ডাউনলোড করা তো একদম সহজ ভাইয়া! 📥 হোমপেজে যে গোল্ডেন কালার বাটনগুলো আছে, ওগুলোতে ক্লিক করো। শর্টলিংকটা পার হলেই একদম সরাসরি মিডিয়াফায়ার বা আসল ডাউনলোড লিংক পেয়ে যাবে! 🚀"
+    elif any(x in user_msg for x in ['নাম কি', 'নাম', 'nam ki', 'name']):
+        reply = "আমার নিজের কোনো নাম নেই ভাইয়া, তবে আমি আমাদের সবার প্রিয় MD SUYAIF ভাইয়ার তৈরি করা একটি সুপার ইন্টেলিজেন্ট মিষ্টি এআই বোন! 👧✨"
     else:
-        reply = "Wow, apnar proshnoটি ami deeply analyze korechi 🧠! Ami Mini ChatGPT-er moto duniar jekono logic, bypass, coding ba high-level gaming technical solutions jani 🚀. Amader dynamic update pete uporer links follow korun ba srasori admin er sathe chat korun 🥰!"
+        reply = "উফ ভাইয়া! তোমার প্রশ্নটা আমি আমার ছোট্ট মাথায় খুব সুন্দর করে অ্যানালাইসিস করেছি 🧠। আমি মিনি চ্যাটজিপিটির মতো দুনিয়ার সব কোডিং ও গেমের সিক্রেট ট্রিকস জানি 🥰। তুমি আমাদের লেটেস্ট আপডেট পেতে ওপরের লিংকগুলো ফলো করতে পারো ভাইয়া! 💖"
         
     return jsonify({'reply': reply})
 
